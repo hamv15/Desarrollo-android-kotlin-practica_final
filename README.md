@@ -1,8 +1,7 @@
 
 # Desarrollo Android - Kotlin: Práctica final
 
-Proyecto dónde se genera un login y creación de cuenta utilizando un activity para manejar el fragment destinado al loginy el fragment destinado a la creación de cuenta. Ambos fragmentes
-dirigin a una pantalla "Home" que muestra algunos datos del usuario que ingresó. La aplicación maneja los siguinetes datos del usuario:
+Proyecto dónde se genera un login y creación de cuenta utilizando un activity para manejar el fragment destinado al login y el fragment destinado a la creación de cuenta. Ambos fragmentes dirigen a una pantalla "Home" que muestra algunos datos del usuario que ingresó. La aplicación maneja los siguinetes datos del usuario:
 
 - ✅ Nombre
 - ✅ Apellido
@@ -12,6 +11,8 @@ dirigin a una pantalla "Home" que muestra algunos datos del usuario que ingresó
 
 Esta aplicación utiliza los siguientes elementos:
 
+- ✅ Activities
+- ✅ Fragments
 - ✅ TextView
 - ✅ ImageView
 - ✅ EditText
@@ -26,8 +27,7 @@ Esta aplicación utiliza los siguientes elementos:
 
 
 La interfaz cuenta con mensajes Toast que le informan al usuario problemas al llenar el formulario de manera incorrecta.
-Se menciona que para este ejercicio, fue necesario utilizar **NestedScrollView** para generar una vista adaptable al contenido y poder tener srcoll. Se cuenta con un usuario
-almacenado en duro en el código, mismo que es utilizado para iniciar sesion con las siguientes credenciales: spark9556@gmail.com y password: Hola123.
+Se menciona que para este ejercicio, fue necesario utilizar **NestedScrollView** para generar una vista adaptable al contenido y poder tener srcoll. Se cuenta con un usuario almacenado en duro en el código, mismo que es utilizado para iniciar sesion con las siguientes credenciales: spark9556@gmail.com y password: Hola123.
 ## Autor
 **Hugo Adrián Meza Vega**
 - Github: [@hamv15](https://github.com/hamv15)

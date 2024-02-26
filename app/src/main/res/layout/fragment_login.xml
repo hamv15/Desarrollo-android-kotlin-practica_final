@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".practicafinal.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVertLeftContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVertRightContent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopImageLogin"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopContentLogin"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopContentFooter"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".850"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:id="@+id/barraTitulo"
+        app:layout_constraintCircleRadius="15dp"
+        android:background="@color/blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="@string/title_name_app"
+            android:gravity="center"
+            style="@style/titleTexView"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivUsuario"
+        app:layout_constraintTop_toTopOf="@+id/glTopImageLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+    <EditText
+        android:id="@+id/emailUser"
+        android:hint="@string/placeholder_email_login"
+        style="@style/contentTexView"
+        android:layout_height="60dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glTopContentLogin"
+        app:layout_constraintStart_toStartOf="@+id/glVertLeftContent"
+        app:layout_constraintEnd_toEndOf="@+id/glVertRightContent"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/passwordUser"
+        android:hint="@string/place_holder_pass_login"
+        style="@style/contentTexView"
+        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailUser"
+        app:layout_constraintStart_toStartOf="@+id/glVertLeftContent"
+        app:layout_constraintEnd_toEndOf="@+id/glVertRightContent"
+        android:inputType="textPassword"
+        android:autofillHints="" />
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/text_btn_login"
+        style="@style/activeTexView"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordUser"
+        app:layout_constraintStart_toStartOf="@+id/glVertLeftContent"
+        app:layout_constraintEnd_toEndOf="@+id/glVertRightContent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createAccountButton"
+        android:text="@string/text_btn_create_account"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/bernier_shade_regular"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:backgroundTint="@android:color/transparent"
+        app:rippleColor="#33AAAAAA"
+        app:layout_constraintTop_toTopOf="@id/glTopContentFooter"
+        app:layout_constraintStart_toStartOf="@+id/glVertLeftContent"
+        app:layout_constraintEnd_toEndOf="@+id/glVertRightContent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
